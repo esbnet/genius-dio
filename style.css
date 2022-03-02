@@ -1,0 +1,86 @@
+body {
+	margin: 0;
+	background-color: rgb(208, 255, 239);
+}
+
+.main-game {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.genius {
+	display: grid;
+	grid-template-areas:
+		"verde vermelho"
+		"amarelo azul";
+	grid-gap: 10px;
+	border: 1px solid #fff;
+	background-color: #ffffff;
+	border-radius: 100%;
+	width: 700px;
+	height: 700px;
+}
+
+.blue {
+	border: 1px solid #000;
+    box-shadow: inset 0 0 0 2px #fff;
+	grid-area: azul;
+	background-color: blue;
+	border-bottom-right-radius: 100%;
+
+    transition: all 0.5s;
+
+}
+
+.blue:hover {
+    border: 2px solid #000;
+    box-shadow: inset 5 0 0 2px #000;
+}
+
+.red {
+	border: 1px solid #000;
+    box-shadow: inset 0 0 0 2px #fff;
+	grid-area: vermelho;
+	background-color: red;
+	border-top-right-radius: 100%;
+}
+
+.red:hover {
+    border: 2px solid #000;
+    box-shadow: inset 5 0 0 2px #000;
+}
+
+
+
+.yellow {
+	border: 1px solid #000;
+    box-shadow: inset 0 0 0 2px #fff;
+	grid-area: amarelo;
+	background-color: yellow;
+	border-bottom-left-radius: 100%;
+}
+.yellow:hover {
+    border: 2px solid #000;
+    box-shadow: inset 5 0 0 2px #000;
+}
+
+
+.green {
+	border: 1px solid #000;
+    box-shadow: inset 0 0 0 2px #fff;
+	grid-area: verde;
+	background-color: green;
+	border-top-left-radius: 100%;
+}
+.green:hover {
+    border: 2px solid #000;
+    box-shadow: inset 5 0 0 2px #000;
+}
+
+
+.selected {
+	opacity: 0.8;
+}
